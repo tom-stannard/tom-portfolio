@@ -15,13 +15,13 @@ import WorkSliderBtns from '@/components/WorkSliderBtns';
 const projects = [
   {
     num: '01',
-    category: 'frontend',
-    title: 'project 1',
-    description: "Lorem ipsum dolor sit amet consectetur",
+    category: 'Query, Clean, Visualize',
+    title: 'Python2',
+    description: "End-to-end analysis of subscription data using SQL to transform and extract, Python for cleaning and Power BI for visualisation.",
     stack: [
-      {name: 'Html 5'},
-      {name: 'Css 3'},
-      {name: 'Javascript'}
+      {name: 'SQL'},
+      {name: 'Python'},
+      {name: 'Power BI'}
     ],
     image: '/assets/work/thumb1.png',
     live: '',
@@ -29,29 +29,28 @@ const projects = [
   },
   {
     num: '02',
-    category: 'frontend',
-    title: 'project 1',
-    description: "Lorem ipsum dolor sit amet consectetur",
+    category: "Let's Talk Business",
+    title: 'Looker Studio Client Dashboard',
+    description: "SQL-to-Viz example of a multi-page client dashboard displaying key operational and financial metrics. Built in Looker Studio and replicated in Power BI.",
     stack: [
-      {name: 'Html 5'},
-      {name: 'Css 3'},
-      {name: 'Javascript'}
+      {name: 'SQL'},
+      {name: 'Looker Studio'},
+      {name: 'Power BI'}
     ],
-    image: '/assets/work/thumb2.png',
+    image: '/assets/work/thumb3.png',
     live: '',
     github: '',
   },
   {
     num: '03',
-    category: 'frontend',
-    title: 'project 1',
-    description: "Lorem ipsum dolor sit amet consectetur",
+    category: 'Charts Everywhere',
+    title: 'R Studio & R Trelliscope',
+    description: "Preparation and bulk visualisation of franchise performance using R Trelliscope",
     stack: [
-      {name: 'Html 5'},
-      {name: 'Css 3'},
-      {name: 'Javascript'}
+      {name: 'R Studio'},
+      {name: 'R Trelliscope'}
     ],
-    image: '/assets/work/thumb3.png',
+    image: '/assets/work/thumb2.png',
     live: '',
     github: '',
   },
@@ -83,7 +82,7 @@ const Portfolio = () => {
             </div>
             {/* project category */}
             <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
-              {project.category} project
+              {project.category}
             </h2>
             {/*project description*/}
             <p className='text-white/60'>{project.description}</p>

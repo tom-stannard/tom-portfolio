@@ -18,7 +18,7 @@ const Home = () => {
             <h1 className="h1 mb-6">
               Hi! I'm <br /> <span className="text-accent">Tom Stannard</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">I excel at crafting dashboards and shit.</p>
+            <p className="max-w-[500px] mb-9 text-white/80">I like using data to simplify things that are needlessly complex.</p>
             {/*button + socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button asChild
@@ -26,7 +26,7 @@ const Home = () => {
                 size="lg" 
                 className="uppercase flex items-center gap-2"
               > 
-                <Link href="/public/Resume.pdf">
+                <Link href='/Resume.pdf' target="_blank">
                 <span>Download CV</span>
                 <FiDownload className="text-xl"/>
                 </Link>

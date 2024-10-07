@@ -3,32 +3,19 @@
 import { 
   FaHtml5, 
   FaCss3, 
-  FaJs, 
-  FaReact, 
-  FaFigma, 
-  FaNodeJs 
+  FaPython 
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiPostgresql, SiR, SiPowerbi, SiLooker, SiTableau, SiMicrosoftazure, SiDatabricks, SiMicrosoftexcel, SiGooglesheets, SiMicrosoftsqlserver } from "react-icons/si";
 
 // about data
 const about = {
-  title: "About me",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  title: "About Me",
+  description: "Reach out any time for a chat.",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Tom Stannard"
-
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "0402 824 763"
-
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "3+ Years"
 
     },
     {
@@ -37,18 +24,23 @@ const about = {
 
     },
     {
+      fieldName: "Phone",
+      fieldValue: "0402 824 763"
+
+    },
+    {
       fieldName: "Github",
-      fieldValue: "githublink"
+      fieldValue: "github.com/tom-stannard"
 
     },
     {
-      fieldName: "Name",
-      fieldValue: "Tom Stannard"
+      fieldName: "Experience",
+      fieldValue: "3+ Years"
 
     },
     {
-      fieldName: "Name",
-      fieldValue: "Tom Stannard"
+      fieldName: "LinkedIn",
+      fieldValue: "linkedin.com/in/tomstannard"
 
     },
   ]
@@ -57,23 +49,23 @@ const about = {
 // experience data 
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
-  description: "Lorem ipsum dolor sit amet",
+  title: "My Experience",
+  description: "I have worked in IT for over 6 years, with 3+ years as a Senior Data & Operations Analyst.",
   items: [
     {
-      company: "Blah",
-      position: "Blah",
-      duration: "Blah Years",
+      company: "Share with Oscar",
+      position: "Senior Data & Operations Analyst",
+      duration: "3+ Years",
     },
     {
-      company: "Blah",
-      position: "Blah",
-      duration: "Blah Years",
+      company: "Tech2",
+      position: "IT Support Technician",
+      duration: "2 Years",
     },
     {
-      company: "Blah",
-      position: "Blah",
-      duration: "Blah Years",
+      company: "Freelance",
+      position: "Wordpress Developer",
+      duration: "4 Years",
     },
   ],
 };
@@ -81,63 +73,84 @@ const experience = {
 // education data 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
-  description: "Lorem ipsum dolor sit amet",
+  title: "My Education",
+  description: "I am committed to lifelong learning. My studies continue to this day via the Datacamp platform.",
   items: [
     {
-      institution: "Blah",
-      degree: "Blah",
-      duration: "Blah Years",
+      institution: "Datacamp",
+      degree: "47 Courses - Data Analysis & Engineering",
+      duration: "2 Years (In Progress)",
     },
     {
-      institution: "Blah",
-      degree: "Blah",
-      duration: "Blah Years",
+      institution: "UTS",
+      degree: "Bachelor of Science Information Technology",
+      duration: "4 Years",
     },
     {
-      institution: "Blah",
-      degree: "Blah",
-      duration: "Blah Years",
+      institution: "TAFE NSW",
+      degree: "Cert III Telecommunications Technology",
+      duration: "1 Years",
+    },
+    {
+      institution: "TAFE NSW",
+      degree: "Cert III Information & Digital Technology",
+      duration: "2 Years",
     },
   ],
 };
 
 // skills data
 const skills = {
-  title: "My skills",
-  description: "blah",
+  title: "My Stack",
+  description: "See the tools I've mastered for data extraction, cleaning, transformation and visualisation.",
   skillList: [
     {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <SiMicrosoftsqlserver />,
+      name: "Microsoft SQL Server",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiR />,
+      name: "R Programming",
+    },
+    {
+      icon: <SiPowerbi />,
+      name: "PowerBI",
+    },
+    {
+      icon: <SiLooker />,
+      name: "Looker Studio",
+    },
+    {
+      icon: <SiMicrosoftazure />,
+      name: "Azure",
+    },
+    {
+      icon: <SiDatabricks />,
+      name: "Databricks",
+    },
+    {
+      icon: <SiMicrosoftexcel />,
+      name: "Excel",
+    },
+    {
+      icon: <SiGooglesheets />,
+      name: "sheets",
+    },
+    {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML 5",
     },
     {
       icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <FaFigma />,
-      name: "figma",
+      name: "CSS 3",
     },
   ]
 };
@@ -164,8 +177,8 @@ const Resume = () => {
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about me">About me</TabsTrigger>
+            <TabsTrigger value="skills">Stack</TabsTrigger>
+            <TabsTrigger value="about me">About</TabsTrigger>
           </TabsList>
 
           {/*content*/}
@@ -183,7 +196,7 @@ const Resume = () => {
                       return (
                         <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -212,7 +225,7 @@ const Resume = () => {
                       return (
                         <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -241,7 +254,15 @@ const Resume = () => {
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
                           <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                            <div className="text-6xl transition-all duration-300">
+                              <motion.div
+                                className="hover:text-accent"
+                                animate= {{ y: [-2,2], transition: { delay: Math.random()*1, duration: 1, repeat: Infinity, ease: "easeInOut", repeatType: "mirror" }}} 
+                                whileHover={{scale: 1.05, transition: { duration: 0.1 }}}
+                              >
+                                {skill.icon}
+                              </motion.div>
+                            </div>
                           </TooltipTrigger>
                           <TooltipContent>
                             <p className="capitalize">{skill.name}</p>
@@ -261,7 +282,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
                   {about.info.map((item, index)=> {
                     return (
                       <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
