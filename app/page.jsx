@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from 'react-icons/fi';
 import Link from "next/link";
+import ResumeDownload from "@/components/ResumeDownload";
 
 // components
 import Social from "@/components/Social";
@@ -21,16 +22,7 @@ const Home = () => {
             <p className="max-w-[500px] mb-9 text-white/80">I like using data to simplify things that are needlessly complex.</p>
             {/*button + socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button asChild
-                variant="outline" 
-                size="lg" 
-                className="uppercase flex items-center gap-2"
-              > 
-                <Link href='/Resume.pdf' target="_blank">
-                <span>Download CV</span>
-                <FiDownload className="text-xl"/>
-                </Link>
-              </Button>
+              <ResumeDownload />
               <div className="mb-8 xl:mb-0">
                 <Social 
                   containerStyles="flex gap-6" 

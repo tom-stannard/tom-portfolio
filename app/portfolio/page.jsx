@@ -12,6 +12,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
 
+import thumb1 from '/public/assets/work/thumb1.png'
+
 const projects = [
   {
     num: '01',
@@ -23,7 +25,7 @@ const projects = [
       {name: 'Python'},
       {name: 'Power BI'}
     ],
-    image: '/assets/work/thumb1.png',
+    image: thumb1,
     live: '',
     github: '',
   },
@@ -135,13 +137,13 @@ const Portfolio = () => {
           <Swiper 
             spaceBetween={30} 
             slidesPerView={1} 
-            className='xl:h-[520px] mb-12'
+            className='xl:h-[520px] mb-12 rounded-xl'
             onSlideChange={handleSlideChange}
           >
             {projects.map((project, index)=> {
               return ( 
                 <SwiperSlide key={index} className='w-full'>
-                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
+                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-xl'>
                     {/* overlay */}
                     <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                     {/*image*/}
@@ -149,7 +151,7 @@ const Portfolio = () => {
                       <Image 
                         src={project.image} 
                         fill 
-                        className='object-cover' 
+                        className='object-cover rounded-xl' 
                         alt='' 
                       />
                     </div>
