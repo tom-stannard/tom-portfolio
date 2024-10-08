@@ -13,6 +13,8 @@ import Image from 'next/image';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
 
 import thumb1 from '/public/assets/work/thumb1.png'
+import thumb2 from '/public/assets/work/thumb2.png'
+import thumb3 from '/public/assets/work/thumb3.png'
 
 const projects = [
   {
@@ -39,7 +41,7 @@ const projects = [
       {name: 'Looker Studio'},
       {name: 'Power BI'}
     ],
-    image: '/assets/work/thumb3.png',
+    image: thumb2,
     live: '',
     github: '',
   },
@@ -52,7 +54,7 @@ const projects = [
       {name: 'R Studio'},
       {name: 'R Trelliscope'}
     ],
-    image: '/assets/work/thumb2.png',
+    image: thumb3,
     live: '',
     github: '',
   },
@@ -109,10 +111,10 @@ const Portfolio = () => {
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                      <BsArrowUpRight className='text-white text-3xl group-hover:text-accent'/>
+                      <BsArrowUpRight className='text-white text-3xl group-hover:text-accent transition-all duration-500 hover:-rotate-45'/>
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>live project</p>
+                      <p>Live Project</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
@@ -125,7 +127,7 @@ const Portfolio = () => {
                       <BsGithub className='text-white text-3xl group-hover:text-accent'/>
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Github repository</p>
+                      <p>Github Repository</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
