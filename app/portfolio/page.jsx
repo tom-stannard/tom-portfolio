@@ -110,8 +110,8 @@ const Portfolio = () => {
               <Link href={project.live}>
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                      <BsArrowUpRight className='text-white text-3xl group-hover:text-accent transition-all duration-500 hover:-rotate-45'/>
+                    <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group transition-all duration-500 hover:-rotate-45'>
+                      <BsArrowUpRight className='text-white text-3xl group-hover:text-accent'/>
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>Live Project</p>

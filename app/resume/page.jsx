@@ -3,10 +3,14 @@
 import { 
   FaHtml5, 
   FaCss3, 
-  FaPython 
+  FaPython, 
+  FaGit,
+  FaSlack
 } from "react-icons/fa";
 
-import { SiPostgresql, SiR, SiPowerbi, SiLooker, SiTableau, SiMicrosoftazure, SiDatabricks, SiMicrosoftexcel, SiGooglesheets, SiMicrosoftsqlserver } from "react-icons/si";
+import { SiPostgresql, SiR, SiPowerbi, SiLooker, SiTableau, SiMicrosoftazure, SiDatabricks, SiMicrosoftexcel, SiGooglesheets, SiMicrosoftsqlserver, SiVisualstudiocode } from "react-icons/si";
+
+import { CgMonday } from "react-icons/cg";
 
 // about data
 const about = {
@@ -55,7 +59,7 @@ const experience = {
     {
       company: "Share with Oscar",
       position: "Senior Data & Operations Analyst",
-      duration: "3+ Years",
+      duration: "3+ Years (Present)",
     },
     {
       company: "Tech2",
@@ -79,7 +83,7 @@ const education = {
     {
       institution: "Datacamp",
       degree: "47 Courses - Data Analysis & Engineering",
-      duration: "2 Years (In Progress)",
+      duration: "2+ Years (In Progress)",
     },
     {
       institution: "UTS",
@@ -101,8 +105,8 @@ const education = {
 
 // skills data
 const skills = {
-  title: "My Stack",
-  description: "See the tools I've mastered for data extraction, cleaning, transformation and visualisation.",
+  title: "My Tech Stack",
+  description: "See the tools I've mastered for data extraction, cleaning, transformation, visualisation and workflow management.",
   skillList: [
     {
       icon: <SiPostgresql />,
@@ -152,6 +156,22 @@ const skills = {
       icon: <FaCss3 />,
       name: "CSS 3",
     },
+    {
+      icon: <SiVisualstudiocode />,
+      name: "Visual Studio Code",
+    },
+    {
+      icon: <FaGit />,
+      name: "Git",
+    },
+    {
+      icon: <CgMonday />,
+      name: "Monday",
+    },
+    {
+      icon: <FaSlack />,
+      name: "Slack",
+    },
   ]
 };
 
@@ -190,7 +210,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[550px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index)=> {
                       return (
@@ -219,7 +239,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[550px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index)=> {
                       return (
@@ -248,6 +268,7 @@ const Resume = () => {
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 </div>
+                <ScrollArea className="h-[550px]">
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index)=> {
                     return <li key={index}>
@@ -272,6 +293,7 @@ const Resume = () => {
                     </li>
                   } )}
                 </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -282,6 +304,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
+                <ScrollArea className="h-[582px]">
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
                   {about.info.map((item, index)=> {
                     return (
@@ -292,6 +315,7 @@ const Resume = () => {
                     )
                   })}
                 </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
           </div>
