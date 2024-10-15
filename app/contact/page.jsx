@@ -30,7 +30,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: 'City',
-    description: 'Oran Park, NSW 2570, Australia',
+    description: 'Cobbitty, NSW 2570, Australia',
   },
 ];
 

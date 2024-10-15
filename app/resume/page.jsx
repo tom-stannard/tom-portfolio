@@ -111,66 +111,98 @@ const skills = {
     {
       icon: <SiPostgresql />,
       name: "PostgreSQL",
+      years: 3,
+      courses: 10,
     },
     {
       icon: <SiMicrosoftsqlserver />,
       name: "Microsoft SQL Server",
+      years: 1,
+      courses: 2,
     },
     {
       icon: <FaPython />,
       name: "Python",
+      years: 1,
+      courses: 2,
     },
     {
       icon: <SiR />,
       name: "R Programming",
+      years: 2,
+      courses: 20,
     },
     {
       icon: <SiPowerbi />,
       name: "PowerBI",
+      years: 2,
+      courses: 10,
     },
     {
       icon: <SiLooker />,
       name: "Looker Studio",
+      years: 3,
+      courses: 0,
     },
     {
       icon: <SiMicrosoftazure />,
       name: "Azure",
+      years: 1,
+      courses: 3,
     },
     {
       icon: <SiDatabricks />,
       name: "Databricks",
+      years: 1,
+      courses: 3,
     },
     {
       icon: <SiMicrosoftexcel />,
       name: "Excel",
+      years: 3,
+      courses: 0,
     },
     {
       icon: <SiGooglesheets />,
       name: "sheets",
+      years: 3,
+      courses: 0,
     },
     {
       icon: <FaHtml5 />,
       name: "HTML 5",
+      years: 7,
+      courses: 0,
     },
     {
       icon: <FaCss3 />,
       name: "CSS 3",
+      years: 7,
+      courses: 0,
     },
     {
       icon: <SiVisualstudiocode />,
       name: "Visual Studio Code",
+      years: 1,
+      courses: 0,
     },
     {
       icon: <FaGit />,
       name: "Git",
+      years: 1,
+      courses: 0,
     },
     {
       icon: <CgMonday />,
       name: "Monday",
+      years: 3,
+      courses: 0,
     },
     {
       icon: <FaSlack />,
       name: "Slack",
+      years: 3,
+      courses: 0,
     },
   ]
 };
@@ -286,7 +318,7 @@ const Resume = () => {
                             </div>
                           </TooltipTrigger>
                           <TooltipContent>
-                            <p className="capitalize">{skill.name}</p>
+                            <p className="capitalize"><b>{skill.name}</b> | {skill.years} Year{skill.years > 1 && "s"} {skill.courses !== 0 && " & " + skill.courses + " Course"}{skill.courses > 1 && "s"} </p>
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
