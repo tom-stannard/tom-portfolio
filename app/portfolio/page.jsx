@@ -20,12 +20,12 @@ const projects = [
   {
     num: '01',
     category: 'Query, Clean, Visualize',
-    title: 'Python2',
-    description: "End-to-end analysis of subscription data using SQL to transform and extract, Python for cleaning and Power BI for visualisation.",
+    title: 'SQL1',
+    description: "End-to-end analysis of product sales data from various warehouses using SQL to transform and extract, R Studio for exploratory data analysis and Looker Studio for a robust sales dashboard.",
     stack: [
       {name: 'SQL'},
-      {name: 'Python'},
-      {name: 'Power BI'}
+      {name: 'R Studio'},
+      {name: 'Looker Studio'}
     ],
     image: thumb1,
     live: '',
