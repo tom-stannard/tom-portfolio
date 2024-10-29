@@ -19,17 +19,17 @@ import thumb3 from '/public/assets/work/thumb3.png'
 const projects = [
   {
     num: '01',
-    category: 'Query, Clean, Visualize',
+    category: 'Project Motoparts',
     title: 'SQL1',
-    description: "End-to-end analysis of product sales data from various warehouses using SQL to transform and extract, R Studio for exploratory data analysis and Looker Studio for a robust sales dashboard.",
+    description: "End-to-end analysis of product sales data from various warehouses using SQL to transform and extract, R Studio for exploratory data analysis and Looker Studio for a robust executive sales dashboard.",
     stack: [
       {name: 'SQL'},
       {name: 'R Studio'},
       {name: 'Looker Studio'}
     ],
     image: thumb1,
-    live: '',
-    github: '',
+    live: 'https://lookerstudio.google.com/reporting/dbc972b7-07fe-4e8b-a692-b1536b73fad9',
+    github: 'https://github.com/tom-stannard/Project-Motoparts',
   },
   {
     num: '02',
