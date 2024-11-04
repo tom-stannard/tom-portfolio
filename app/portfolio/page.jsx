@@ -33,9 +33,9 @@ const projects = [
   },
   {
     num: '02',
-    category: "Let's Talk Business",
+    category: "Harebnb",
     title: 'Looker Studio Client Dashboard',
-    description: "SQL-to-Viz example of a multi-page client dashboard displaying key operational and financial metrics. Built in Looker Studio and replicated in Power BI.",
+    description: "SQL-to-Viz example of a single-page exportable client dashboard, designed to display key performance metrics for VIP vendors and be routinely dispatched to them in pdf format via email. Built in Looker Studio and replicated in Power BI.",
     stack: [
       {name: 'SQL'},
       {name: 'Looker Studio'},
