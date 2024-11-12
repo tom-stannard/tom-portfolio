@@ -42,8 +42,8 @@ const projects = [
       {name: 'Power BI'}
     ],
     image: thumb2,
-    live: '',
-    github: '',
+    live: 'https://lookerstudio.google.com/reporting/f619017b-c8f9-495f-be02-daf9a914ff64',
+    github: 'https://github.com/tom-stannard/Project-Harebnb',
   },
   {
     num: '03',
