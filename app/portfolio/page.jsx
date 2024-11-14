@@ -47,12 +47,11 @@ const projects = [
   },
   {
     num: '03',
-    category: 'Charts Everywhere',
-    title: 'R Studio & R Trelliscope',
-    description: "Preparation and bulk visualisation of franchise performance using R Trelliscope",
+    category: '(WIP) Analyzing Car Reviews with LLMs',
+    title: 'Python',
+    description: "Implementing pre-trained large language model (LLM) for tasks such as analyzing and classifying customer reviews on cars, responding to inquiries about available car models, and translating English text data into other languages.",
     stack: [
-      {name: 'R Studio'},
-      {name: 'R Trelliscope'}
+      {name: 'Python'}
     ],
     image: thumb3,
     live: '',

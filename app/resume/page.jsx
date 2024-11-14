@@ -337,7 +337,7 @@ const Resume = () => {
                   {about.description}
                 </p>
                 <ScrollArea className="h-[582px]">
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[800px] mx-auto xl:mx-0">
                   {about.info.map((item, index)=> {
                     return (
                       <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
