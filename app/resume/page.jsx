@@ -139,6 +139,12 @@ const skills = {
       courses: 10,
     },
     {
+      icon: <SiTableau />,
+      name: "Tableau",
+      years: 1,
+      courses: 2,
+    },
+    {
       icon: <SiLooker />,
       name: "Looker Studio",
       years: 3,
@@ -195,12 +201,6 @@ const skills = {
     {
       icon: <CgMonday />,
       name: "Monday",
-      years: 3,
-      courses: 0,
-    },
-    {
-      icon: <FaSlack />,
-      name: "Slack",
       years: 3,
       courses: 0,
     },
