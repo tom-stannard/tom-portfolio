@@ -19,7 +19,7 @@ const Home = () => {
             <h1 className="h1 mb-6">
               Hi! I'm <br /> <span className="text-accent">Tom Stannard</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">I like using data to simplify things that are needlessly complex.</p>
+            <p className="max-w-[500px] mb-9 text-white/80">I like working with data to simplify things that are needlessly complex.</p>
             {/*button + socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <ResumeDownload />
